@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- 
+  Author:
+  KELOMPOK 3
+  Matkul: HCI
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Plantiful Meals</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/icons/logo.png" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <div class="logo">
+        <img src="assets/icons/logo.png" alt="Logo" />
+        <h3>Plantiful Meals</h3>
+      </div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <div class="logo">
+          <img src="assets/icons/logo.png" alt="Logo" />
+          <h3>Plantiful Meals</h3>
+        </div>
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact us</a></li>
+          <li><a href="Try-our-recipe.html">Try our Recipe</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section Banner Start  -->
+    <section class="banner-section" style="background-image: url('assets/images/bg-1.jpg');">
+      <div class="banner-content">
+        <h2>Plantiful Meals</h2>
+        <p>Your journey to a plant-based lifestyle</p>
+        <a href="Try-our-recipe.html" class="btn-discover">Discover More</a>
+      </div>
+    </section>
+
+    <!-- Section Contact Us Start -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <img src="assets/icons/logo.png" alt="Brand Logo" class="brand-logo" />
+      <h3 class="brand-name">Yummy<span style="color: #35b14f">Vegan</span></h3>
+      <p class="brand-description">
+        Plantiful Meals: Inspiring mindful eating for a sustainable future.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <!-- Message Contact us Popup Start -->
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <p class="popup-message" id="popup-message"></p>
+        <button class="popup-button" id="close-popup">OK</button>
+      </div>
+    </div>
+
+    <!-- Scroll to Top btn -->
+    <button id="scroll-to-top" title="Go to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="app.js" async defer></script>
+    <script
+      src="https://kit.fontawesome.com/7c7f68c3e5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </body>
+</html>

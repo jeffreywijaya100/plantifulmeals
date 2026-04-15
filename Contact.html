@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Plantiful Meals</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/icons/logo.png" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <div class="logo">
+        <img src="assets/icons/logo.png" alt="Logo" />
+        <h3>Plantiful Meals</h3>
+      </div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <div class="logo">
+          <img src="assets/icons/logo.png" alt="Logo" />
+          <h3>Plantiful Meals</h3>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html" class="active">Contact us</a></li>
+          <li><a href="Try-our-recipe.html">Try our Recipe</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<section class="contact-us-container" id="contact-us">
+    <div class="container">
+      <div class="contact-us">
+        <h3 class="contact-us-title">Contact Us</h3>
+        <form id="contact-form" onsubmit="sendEmail(); return false">
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn contact-us-btn">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="assets/icons/logo.png" alt="Brand Logo" class="brand-logo" />
+    <h3 class="brand-name">Yummy<span style="color: #35b14f">Vegan</span></h3>
+    <p class="brand-description">
+      Plantiful Meals: Inspiring mindful eating for a sustainable future.
+    </p>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Message Contact us Popup Start -->
+  <div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+      <p class="popup-message" id="popup-message"></p>
+      <button class="popup-button" id="close-popup">OK</button>
+    </div>
+  </div>
+
+  <!-- Scroll to Top btn -->
+  <button id="scroll-to-top" title="Go to top">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="app.js" async defer></script>
+  <script
+    src="https://kit.fontawesome.com/7c7f68c3e5.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+</body>
+</html>
